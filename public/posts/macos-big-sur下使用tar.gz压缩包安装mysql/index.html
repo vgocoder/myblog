@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.82.0" />
+
+  <title>macOS Big Sur下使用tar.gz压缩包安装MySQL &middot; 三五五七</title>
+
+  <meta name="description" content="MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。" />
+
+  
+
+<meta itemprop="name" content="macOS Big Sur下使用tar.gz压缩包安装MySQL">
+<meta itemprop="description" content="MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。"><meta itemprop="datePublished" content="2021-04-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-04-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="119">
+<meta itemprop="keywords" content="macOSBigSur,MacM1,tar.gz,mysql," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="macOS Big Sur下使用tar.gz压缩包安装MySQL"/>
+<meta name="twitter:description" content="MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。"/>
+
+
+<meta property="og:title" content="macOS Big Sur下使用tar.gz压缩包安装MySQL" />
+<meta property="og:description" content="MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-16T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-04-16T00:00:00&#43;00:00" />
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://blog.arrislink.com#author",
+      "name": "3557ᴳᴼ",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://blog.arrislink.com/images/profile.png"
+        
+      },
+      "description": "思考技术，关注育儿"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://blog.arrislink.com#website",
+      "url": "https://blog.arrislink.com",
+      "name": "三五五七",
+      "description": "思考技术，关注育儿",
+      "publisher": {
+        "@id": "https://blog.arrislink.com#author"
+      },
+      "inLanguage": "zh-cn"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/#webpage",
+      "url": "https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/",
+      "name": "macOS Big Sur下使用tar.gz压缩包安装MySQL",
+      "isPartOf": {
+        "@id": "https://blog.arrislink.com#website"
+      },
+      "about": {
+         "@id": "https://blog.arrislink.com#author"
+      },
+      "datePublished": "2021-04-16T00:00:00+00:00",
+      "dateModified": "2021-04-16T00:00:00+00:00",
+      "description": "MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。",
+      "inLanguage": "zh-cn",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/#webpage"
+      },
+      "headline": "macOS Big Sur下使用tar.gz压缩包安装MySQL",
+      "datePublished": "2021-04-16T00:00:00+00:00",
+      "dateModified": "2021-04-16T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://blog.arrislink.com#author"
+      },
+      "keywords": [
+        "macOSBigSur",
+        "MacM1",
+        "tar.gz",
+        "mysql"
+      ],
+      "articleSection": [
+        "技术",
+        "育儿"
+      ],
+      "inLanguage": "zh-cn",
+      "author": {
+        "@type": "Person",
+        "name": "vgocoder"
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: black;
+  }
+
+  .read-more-link a {
+    border-color: black;
+  }
+
+  .read-more-link a:hover {
+    background-color: black;
+  }
+
+  .pagination li a {
+    color: black;
+    border: 1px solid black;
+  }
+
+  .pagination li.active a {
+    background-color: black;
+  }
+
+  .pagination li a:hover {
+    background-color: black;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: black;
+  }
+</style>
+
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://blog.arrislink.com">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>三五五七</h1>
+
+      
+      <p class="lead">思考技术，关注育儿</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://blog.arrislink.com">首页</a>
+        </li>
+        <li>
+          <a href="/posts/">文章</a>
+        </li><li>
+          <a href="/about/">关于</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Wechat" target="_blank">
+        <i class="fab fa-weixin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Weibo" target="_blank">
+        <i class="fab fa-weibo" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">macOS Big Sur下使用tar.gz压缩包安装MySQL</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-04-16T00:00:00Z">Apr 16, 2021</time> <span class="readtime">&middot; 1 min read</span>
+  </div>
+
+  <div>
+  <p>MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 1.下载安装压缩包</span>
+<span style="color:#75715e"># 2. 解压</span>
+sudo tar zxf mysql-8.0.23-macos10.15-x86_64.tar.gz -C /usr/local
+<span style="color:#75715e"># 2.1 设置软链接</span>
+cd /usr/local 
+sudo ln -s mysql-8.0.23-macos10.15-x86_64 ./mysql
+<span style="color:#75715e"># 3. 更改 mysql 安装目录所属用户与用户组</span>
+sudo chown -R root:wheel mysql
+<span style="color:#75715e"># 4 初始化</span>
+cd /usr/local/mysql
+sudo bin/mysqld --initialize --user<span style="color:#f92672">=</span>mysql
+<span style="color:#75715e"># 初始化后得到一个【临时初始化密码】，后面要用到</span>
+<span style="color:#75715e"># 5. 启动服务</span>
+<span style="color:#75715e"># 5.1 启动</span>
+cd /usr/local/mysql
+sudo ./support-files/mysql.server start  
+<span style="color:#75715e"># 5.2 重启(可选)</span>
+sudo ./support-files/mysql.server restart  
+<span style="color:#75715e"># 5.3 停止(可选)</span>
+sudo ./support-files/mysql.server stop  
+<span style="color:#75715e"># 5.4 检查 MySQL 运行状态(可选)</span>
+sudo ./support-files/mysql.server status
+<span style="color:#75715e"># 6. 重设密码</span>
+cd /usr/local/mysql
+sudo ./bin/mysql -uroot -p
+<span style="color:#75715e"># 6.1 输入【临时初始化密码】</span>
+
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#75715e"># 6.2 修改密码
+</span><span style="color:#75715e"></span>mysql<span style="color:#f92672">&gt;</span>
+	<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;localhost&#39;</span> <span style="color:#66d9ef">IDENTIFIED</span> <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;new_password&#39;</span> PASSWORD EXPIRE NEVER;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 7. 设置mysql执行路径(可选)</span>
+echo <span style="color:#e6db74">&#39;export PATH=&#34;$PATH:/usr/local/mysql/bin&#34;&#39;</span> &gt;&gt; ~/.zshrc
+source ~/.zshrc
+<span style="color:#75715e"># 7.1 如果用其他shell配置文件替换为对应配置文件，譬如：&#34;~/.bash_profile&#34;</span>
+echo <span style="color:#e6db74">&#39;export PATH=&#34;$PATH:/usr/local/mysql/bin&#34;&#39;</span> &gt;&gt; ~/.bash_profile
+source ~/.bash_profile
+</code></pre></div>
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://blog.arrislink.com/tags/macosbigsur/" class="tag-link">macOSBigSur</a>
+  </li>
+  
+  <li>
+    <a href="https://blog.arrislink.com/tags/macm1/" class="tag-link">MacM1</a>
+  </li>
+  
+  <li>
+    <a href="https://blog.arrislink.com/tags/tar.gz/" class="tag-link">tar.gz</a>
+  </li>
+  
+  <li>
+    <a href="https://blog.arrislink.com/tags/mysql/" class="tag-link">mysql</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; 3557ᴳᴼ 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+  
+</body>
+</html>

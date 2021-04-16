@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tar.gz on 三五五七</title>
+    <link>https://blog.arrislink.com/tags/tar.gz/</link>
+    <description>Recent content in tar.gz on 三五五七</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.arrislink.com/tags/tar.gz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS Big Sur下使用tar.gz压缩包安装MySQL</title>
+      <link>https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/posts/macos-big-sur%E4%B8%8B%E4%BD%BF%E7%94%A8tar.gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AE%89%E8%A3%85mysql/</guid>
+      <description>MySQL官方的安装包太大，就下载了个压缩包试试，相比安装包有点折腾，以下是折腾过程。
+# 1.下载安装压缩包 # 2. 解压 sudo tar zxf mysql-8.0.23-macos10.15-x86_64.tar.gz -C /usr/local # 2.</description>
+    </item>
+    
+  </channel>
+</rss>

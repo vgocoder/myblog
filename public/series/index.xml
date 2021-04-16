@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on 三五五七</title>
+    <link>https://blog.arrislink.com/series/</link>
+    <description>Recent content in Series on 三五五七</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.arrislink.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac M1</title>
+      <link>https://blog.arrislink.com/series/mac-m1/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/series/mac-m1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

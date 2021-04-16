@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 三五五七</title>
+    <link>https://blog.arrislink.com/tags/</link>
+    <description>Recent content in Tags on 三五五七</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.arrislink.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacM1</title>
+      <link>https://blog.arrislink.com/tags/macm1/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/tags/macm1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOSBigSur</title>
+      <link>https://blog.arrislink.com/tags/macosbigsur/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/tags/macosbigsur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://blog.arrislink.com/tags/mysql/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tar.gz</title>
+      <link>https://blog.arrislink.com/tags/tar.gz/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/tags/tar.gz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://blog.arrislink.com/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arrislink.com/tags/index/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

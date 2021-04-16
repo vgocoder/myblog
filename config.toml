@@ -1,0 +1,75 @@
+theme = "soho"
+baseURL = "https://blog.arrislink.com"
+title = "三五五七"
+languageCode = "zh-cn"
+enableInlineShortcodes = true
+
+summarylength = 10
+enableEmoji = true
+
+[params]
+author = "3557ᴳᴼ"
+description = "思考技术，关注育儿"
+
+## Set one of:
+# gravatar = "soho@example.com"
+profilePicture = "images/profile.png"
+
+copyright = "3557ᴳᴼ"
+license = "CC BY-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+
+## Set custom theme color.
+themeColor = "black"
+
+## Set custom CSS and/or JS to override site defaults.
+# customCss = ["css/blog.css"]
+# customJs = ["js/blog.js"]
+
+## Set as many as you want.
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "#"
+
+[[params.socialIcons]]
+icon = "fa-weixin"
+title = "Wechat"
+url = "#"
+
+[[params.socialIcons]]
+icon = "fa-weibo"
+title = "Weibo"
+url = "#"
+
+[menu]
+
+[[menu.main]]
+name = "文章"
+weight = 100
+identifier = "posts"
+url = "/posts/"
+
+[[menu.main]]
+name = "关于"
+identifier = "about"
+weight = 300
+url = "/about/"
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+
+[markup]
+
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true # if false, you need to provide you own custom CSS
+style = "monokai"
+tabWidth = 4
